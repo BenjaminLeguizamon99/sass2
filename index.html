@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="series, peliculas, podcast, estreno, ultima temporada, nuevos capitulos"> <!--Agrego esta metaetiqueta con con 6 descripciones que son palabras claves a la hora de buscar peliculas, series o podcast por internet-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Peliculas, series y podcast</title> <!--Agrego un titulo breve pero muy informativo acerca del contenido de la pagina. En esta entrega tengo una sola pagina, pero en caso de tener mas de una pagina el titulo seria distinto en cada una de ellas.-->
+  </head>
+  <body> <!--A todas las imagenes le agregue el "alt" para asi mejorar el SEO-->
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Peliculas</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Contrata Premium!</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <h1 class="text-center text-uppercase">Peliculas, Series y Podcast!</h1>
+      <div class="home-flex">
+        <div class="cartelera-flex"> 
+          <h2>Peliculas</h2>
+          <img src="imagenes/pelicula.jpg" alt="Peliculas" class="img-fluid">
+          <a href="#" class="home-boton-peliculas text-center">Ver todas las peliculas disponibles</a>
+        </div>
+        <div class="cartelera-flex">
+          <h2>Series</h2>
+          <img src="imagenes/serie.jpg" alt="Series" class="img-fluid">
+          <a href="#" class="home-boton-series text-center">Ver todas las series disponibles</a>
+        </div>
+        <div class="cartelera-flex">
+          <h2>Podcast</h2>
+          <img src="imagenes/podcast.jpeg" alt="Podcast" class="img-fluid">
+          <a href="#" class="home-boton-podcast text-center">Ver todos los podcast disponibles</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-flex">
+      <div>
+        <p>Copyright all right reserved.</p>
+      </div>
+      <div>
+        <ul>
+          <li>Formas de pago</li>
+          <li>Plan familiar</li>
+          <li>Cancelar suscripcion.</li>
+        </ul>
+      </div>
+    </footer>
+   
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

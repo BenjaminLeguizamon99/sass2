@@ -1,0 +1,67 @@
+nav {
+    background-color: #121820;
+    ul {
+        list-style-type: none;
+        li {
+            display: inline-block;
+            padding: 30px;
+            a {
+                text-decoration: none;
+                color:#d7d9ce;
+                &:hover {
+                    color: #425876;
+                }
+            }
+        }
+    }
+}
+.home-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div {
+        width: 100%/3;
+        padding: 20px;
+        margin: 20px;
+        border: 1px solid #121820;
+        height: auto;
+
+    }
+}
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121820;
+    li,p {
+        color: #d7d9ce;
+        padding: 0px 10px 0px 10px;
+    }
+}
+.cartelera-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.estilo-boton {
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+@mixin ver-mas($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
+}
+.home-boton-peliculas {
+    @extend .estilo-boton;
+    @include ver-mas(#ec0b43, #d7d9ce)
+    
+}
+.home-boton-series {
+    @extend .estilo-boton;
+    @include ver-mas(#119da4, #d7d9ce)
+}
+.home-boton-podcast {
+    @extend .estilo-boton;
+    @include ver-mas(#0c7489, #d7d9ce)
+}
